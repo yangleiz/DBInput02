@@ -46,7 +46,7 @@ public class TestDBInputFormat  {
         TextOutputFormat.setOutputPath(job,dist);
 
 
-        
+
         FileSystem fs=FileSystem.get(conf);
         if(fs.exists(dist)){
             fs.delete(dist,true);
