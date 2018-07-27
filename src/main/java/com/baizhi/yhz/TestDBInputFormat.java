@@ -45,6 +45,8 @@ public class TestDBInputFormat  {
         Path dist=new Path("/demo/dist");//结果目录必须为null
         TextOutputFormat.setOutputPath(job,dist);
 
+
+        
         FileSystem fs=FileSystem.get(conf);
         if(fs.exists(dist)){
             fs.delete(dist,true);
